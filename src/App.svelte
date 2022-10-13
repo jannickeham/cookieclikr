@@ -17,22 +17,19 @@
 
 <main>
   <div>
+    <h1>CookieClickr</h1>
+  </div>
+
+  <div>
     <img
       src={cookieImg}
       on:click={handleClick}
       on:keydown={handleClick}
-      transition:scale={{
-        duration: 500,
-        delay: 500,
-        opacity: 0.5,
-        start: 0.5,
-        easing: quintOut,
-      }}
       alt="Cookie"
     />
   </div>
   <div>
-    <p>{counter}</p>
+    <h3>{counter}</h3>
   </div>
   <button on:click={resetClicks}>Reset</button>
 </main>
